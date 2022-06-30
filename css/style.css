@@ -30,7 +30,7 @@ body{
     background-color: #000;
 }
 .container{
-    padding: 75px 85px 15px;
+    padding: 75px 65px 15px;
 }
 .videocall{
     flex-grow: 1;
@@ -45,9 +45,6 @@ body{
 }
 .icon-large{
     font-size: 30px;
-}
-.w-1-7{
-    flex-basis: calc((100% - 38px) / 7);
 }
 /* End LAYOUT */
 /* COMPONENTS */
@@ -124,8 +121,8 @@ body{
 /* Frame */
 .videocall .row{
     row-gap: 10px;
-    column-gap: 6px;
-    align-items: center;
+    column-gap: 4px;
+    justify-content: center;
 }
 .user{
     position: relative;
