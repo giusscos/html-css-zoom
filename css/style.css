@@ -44,7 +44,7 @@ body{
     flex-direction: column;
 }
 .icon-large{
-    font-size: 30px;
+    font-size: 25px;
 }
 /* End LAYOUT */
 /* COMPONENTS */
@@ -74,7 +74,8 @@ body{
     justify-content: center;
 }
 /* Peri */
-.peripherals{
+.toolbar .peripherals{
+    padding-left: 5px;
     gap: 10px;
 }
 .peripheral{
