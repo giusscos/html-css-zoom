@@ -40,38 +40,57 @@ body{
     font-size: 30px;
 }
 /* End LAYOUT */
+/* COMPONENTS */
+.button-action{
+    gap: 10px;
+}
+.fa-share-from-square{
+    color: #4BC800;
+}
+/* End COMPONENTS */
 /* TOOLBAR */
 .toolbar{
     gap: 20px;
     height: 85px;
-    padding: 10px 0 15px 5px;
     color: #fff;
     display: flex;
     flex-direction: row;
     background-color: #222;
     justify-content: space-between;
 }
-/* .toolbar > *{
-    padding: 20px;
-    border: 2px solid #fff;
-} */
+.toolbar > .peripherals,
+.toolbar > .tools-list{
+    padding: 10px 0 15px 0;
+}
+.toolbar .col{
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+/* Peri */
 .peripherals{
     gap: 10px;
-    cursor: pointer;
 }
 .peripheral{
-    gap: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-}
-.peripheral .row{
     gap: 10px;
-}
-.peripheral .row,
-.peripheral .peripheral-mic,
-.peripheral .peripheral-vid{
+    cursor: pointer;
     align-items: center;
     justify-content: center;
+}
+/* End Peri */
+/* Toolbar */
+.tools-list{
+    gap: 20px;
+    align-items: center;
+}
+.tools-list > *{
+    cursor: pointer;
+}
+/* End Toolbar */
+/* Quit */
+.quit{
+    cursor: pointer;
+    color: #FF0026;
+    padding: 30px 20px;
+    background-color: #4A4A4A;
 }
