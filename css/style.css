@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Open Sans', sans-serif, Verdana;
+}
+ul,
+ol,
+menu{
+    list-style: none;
+}
+/* LAYOUT */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.section{
+    flex-grow: 1;
+    display: flex;
+    flex-basis: 1px;
+    flex-direction: column;
+    background-color: #000;
+}
+.videocall{
+    flex-grow: 1;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.icon-large{
+    font-size: 30px;
+}
+/* End LAYOUT */
+/* TOOLBAR */
+.toolbar{
+    gap: 20px;
+    height: 85px;
+    padding: 10px 0 15px 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    background-color: #222;
+    justify-content: space-between;
+}
+/* .toolbar > *{
+    padding: 20px;
+    border: 2px solid #fff;
+} */
+.peripherals{
+    gap: 10px;
+    cursor: pointer;
+}
+.peripheral{
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.peripheral .row{
+    gap: 10px;
+}
+.peripheral .row,
+.peripheral .peripheral-mic,
+.peripheral .peripheral-vid{
+    align-items: center;
+    justify-content: center;
+}
