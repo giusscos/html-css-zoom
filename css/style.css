@@ -110,12 +110,22 @@ body{
     position: absolute;
     top: 10px;
     right: 0;
+    display: flex;
     color: #fff;
+    gap: 5px;
 }
 .tool{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 10px;
+    align-items: center;
     background-color: #4A4A4A;
+}
+.tool svg{
+    width: 18px;
+    height: 18px;
 }
 /* End Screen Tools */
 /* Frame */
