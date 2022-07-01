@@ -17,23 +17,18 @@ img{
     max-width: 100%;
 }
 /* LAYOUT */
-body{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
 .section{
-    flex-grow: 1;
+    height: 100vh;
     display: flex;
-    flex-basis: 1px;
     flex-direction: column;
     background-color: #000;
 }
 .container{
-    padding: 75px 65px 15px;
+    padding: 75px 50px 15px;
 }
 .videocall{
     flex-grow: 1;
+    overflow: auto;
 }
 .row{
     display: flex;
@@ -131,15 +126,20 @@ body{
 /* End Screen Tools */
 /* Frame */
 .videocall .row{
-    row-gap: 10px;
-    column-gap: 4px;
+    gap: 4px;
     justify-content: center;
 }
 .user{
     position: relative;
+    aspect-ratio: 16/9;
+    flex-basis: calc(100% / 7);
+    min-width: 250px;
 }
 .user-video{
-    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .user-info{
     position: absolute;
